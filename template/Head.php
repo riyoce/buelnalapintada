@@ -44,7 +44,15 @@ class Head {
         </div>
         <div>
             <img id=\"slider\"/>            
-        </div>        
+        </div>   
+        
+        <script type=\"text/javascript\">    
+            window.onload = function(){
+                slider();
+                nIntervId = window.setInterval(slider, \"6000\");
+            };
+        </script>
+        
         <div id=\"main_content\">
             ";
     }
