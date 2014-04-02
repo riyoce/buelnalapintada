@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 31, 2014, 7:34:57 PM
+    Author     : Ricardo Cerón
+*/
+
+#top_bar{
+    width: 100%;
+    height: 38px;
+    background-color: #373C2F;
+}
+
+#nav_menu{
+    width: 900px;
+    height: 38px;
+    line-height: 38px;    
+    margin: 0 auto;
+}
+
+#nav_menu a{
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 12px;
+    text-decoration: none;
+    float: left;
+    height: 20px;
+
+    -webkit-transition: color 0.5s;
+    -moz-transition:    color 0.5s;
+    -ms-transition:     color 0.5s;
+    -o-transition:      color 0.5s;
+    transition:         color 0.5s;
+}
+
+#nav_menu a:hover{
+    color: rgb(215, 216, 213);    
+}
+
+.linea{
+    width: 1px;
+    height: 20px;
+    background-color: #666;
+    float: left;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 9px;
+}
+
+#slider{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 500px;    
+}
+
+
+#mascara{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 500px;
+    position: absolute;
+    background-color: blue;
+    opacity: 0.5;
+}
+
+#next_slider{
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color: #373C2F;
+    cursor: pointer;
+    margin-top: 200px;
+}
+
+#prev_slider{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: #373C2F;
+    cursor: pointer;
+    margin-top: 200px;
+}
+
+#main_content{
+    width: 900px;
+    margin:  0 auto;
+    padding: 10px;
+}
+
+#bottom{
+    border-top: #AEB0A9 solid 1px;
+    width: 900px;
+    height: 100px;
+    margin: 0 auto;
+}
+
