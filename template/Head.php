@@ -38,23 +38,16 @@ class Head {
         </div>       
         <div id=\"mascara\" onclick=\"hola();\">
             <div id=\"prev_slider\" onclick=\"prevImage();\">
-            </div>            
-            <div id=\"next_slider\" onclick=\"nextImage();\">
-            </div>
-        </div>
-        <div>
-            <img id=\"slider\"/>            
-        </div>   
-        
-        <script type=\"text/javascript\">    
-            window.onload = function(){
-                slider();
-                nIntervId = window.setInterval(slider, \"6000\");
-            };
-        </script>
-        
-        <div id=\"main_content\">
-            ";
+            </div> 
+            
+            <div id=\"main_content\">
+                <img id=\"logo\" src=\"http://buelnalapintada.com/wp-content/uploads/2013/01/logo_buelna_lapintada1.png\"/>
+                <div id=\"tittle\">
+                    WELCOME TO BUELNA - LA PINTADA HUNTING
+                </div>
+                <div id=\"content\">
+                    
+                ";
     }
 
 }

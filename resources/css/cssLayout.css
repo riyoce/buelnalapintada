@@ -55,7 +55,7 @@ and open the template in the editor.
     margin: 0;
     padding: 0;
     border: 0;
-    height: 500px;    
+    height: 570px;    
 }
 
 
@@ -64,19 +64,50 @@ and open the template in the editor.
     margin: 0;
     padding: 0;
     border: 0;
-    height: 500px;
+    height: 570px;
     position: absolute;
-    background-color: blue;
-    opacity: 0.5;
+}
+
+#main_content{
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#logo{
+    margin-top: 20px;
+}
+
+#tittle{
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 840px;
+    padding: 15px 30px 10px;
+
+    color: rgb(219, 221, 213);
+
+    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+}
+
+#content{
+    background-color: #fff;
+    width: 880px;
+    padding: 10px;
+    height: auto;
+    min-height: 500px;
 }
 
 #next_slider{
-    float: right;
+    right: 0;
     width: 50px;
     height: 50px;
     background-color: #373C2F;
     cursor: pointer;
-    margin-top: 200px;
+    top: 200px;
+    position: absolute;
 }
 
 #prev_slider{
@@ -88,16 +119,37 @@ and open the template in the editor.
     margin-top: 200px;
 }
 
-#main_content{
-    width: 900px;
-    margin:  0 auto;
-    padding: 10px;
+#bottom{    
+    width: 870px;
+    
+    margin: 0 auto;
+    margin-top: 40px;
+
+    font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;    
+    line-height: 1.50;
+    color: #555555;
+    
+    padding-left: 30px;
+    padding-bottom: 30px;
+        
 }
 
-#bottom{
-    border-top: #AEB0A9 solid 1px;
+#bottom span{
+    font-weight: bold;  
+    font-size: 14px;
+}
+
+#bottom_line1{
+    
+    clear: both;
+    
+    background-color: rgb(174,176,169);
+    height: 1px;
     width: 900px;
-    height: 100px;
-    margin: 0 auto;
+    
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
