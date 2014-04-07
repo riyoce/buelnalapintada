@@ -1,14 +1,5 @@
-<?php
-require_once "./template/Head.php";
-require_once "./template/Bottom.php";
-
-$head = new Head();
-$head->printHead("HOME");
-?>
+<?php include ("./template/Head.html");?>
 
 Hola :D
 
-<?php
-$bottom = new Bottom();
-$bottom->printBottom();
-?>
+<?php include ("./template/Bottom.html");?>
