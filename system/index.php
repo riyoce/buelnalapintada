@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8"/>
@@ -21,22 +16,33 @@ and open the template in the editor.
         <link type="text/css" rel="stylesheet" href="resources/css/cssLayout.css"/>
         <title>Buelnalapintada Administrator</title>
     </head>
-    <body>     
+    <body>  
+        <?php
+        require './conexion/Conexion.php';
+        $conn = new Conexion();
+        $query = "select * from secciones";
+        $result = mysqli_query($conn->conectar(), $query);
+        ?>
         <div id="main_content">
             <form id="myForm" action="scripts/Upload.php" method="post" enctype="multipart/form-data">
                 <input type="file" size="60" name="myfile" value="Selecciona un archivo"/>
+                Sección:
+                <select id="seccion" name="seccion">
+                    <option value="">-- Selecciona un departamento --</option>
+                    <?php
+                    while ($row = mysqli_fetch_array($result)) {
+                        ?>
+                        <option value="<?php echo $row["nombre"] ?>"><?php echo $row["nombre"] ?></option>
+                    <?php } ?>
+                </select>
                 <input type="submit" value="Cargar"/>
-            </form>
-
-            <div id="progress">
-                <div id="bar"></div>
-                <div id="percent">0%</div>
-            </div>
+            </form>            
             <br/>
 
             <div id="message"></div>
 
             <div id="content" ></div>
+
         </div>
     </body>
 
