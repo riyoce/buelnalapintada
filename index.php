@@ -1,5 +1,7 @@
-<?php include ("./template/Head.html");?>
+<?php
+
+include ("./template/Head.php");?>
 
 Hola :D
 
-<?php include ("./template/Bottom.html");?>
+<?php include ("./template/Bottom.html"); ?>

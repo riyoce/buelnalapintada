@@ -6,19 +6,21 @@
 
 var n = 0;
 var x;
-
-function slider() {
-
-    var array = new Array("img_1.jpg", "img_2.jpg", "img_3.jpg", "img_4.jpg");
+var array_img;
+var array_txt;
+function slider() {    
     var imagepath = "/buelnalapintada/resources/images_slider/";
     var imageSlider = document.getElementById("slider");
-    x = array.length;
+    var tittle = document.getElementById("tittle");
+    x = array_img.length;
 
     if (n >= x) {
         n = 0;
     }
 
-    imageSlider.src = imagepath + array[n];
+    
+    imageSlider.src = imagepath + array_img[n];
+    tittle.innerHTML = array_txt[n];
     n++;
 
 }

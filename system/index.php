@@ -34,7 +34,8 @@
                         ?>
                         <option value="<?php echo $row["nombre"] ?>"><?php echo $row["nombre"] ?></option>
                     <?php } ?>
-                </select>
+                </select><br/>
+                <textarea name="des" id="des"></textarea>
                 <input type="submit" value="Cargar"/>
             </form>            
             <br/>
